@@ -3,7 +3,7 @@
 
 * {
   box-sizing: border-box;
-
+  scroll-behavior: smooth;
 }
 
 body {
@@ -73,4 +73,44 @@ a {
 
 .footer-social-icon img {
   width: 40px;
+}
+
+
+.login-popup-container {
+  animation: fadeIn 0.8s;
+}
+
+
+/* cart  */
+
+.cart-items-title {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+  align-items: center;
+}
+
+@media (max-width:750px) {
+  .cart-bottom {
+    flex-direction: column-reverse;
+  }
+
+  .cart-promocode {
+    justify-content: start;
+  }
+}
+
+
+/* place order */
+
+.place-order-left input {
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #c5c5c5;
+  outline-color: tomato;
+}
+
+.place-order-left .multi-fields {
+  display: flex;
+  gap: 10px;
 }
